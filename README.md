@@ -20,9 +20,4 @@
 * `docker-compose up`
 * `docker exec -it laravel_test_laravel_php_1 bash` (laravel_test_laravel_php_1 мя контейнера с php)
 * и внутри контейнера `composer update` && `php artisan migrate`
-
-
-
-
-
-.env файл я оставил специально для трекинга гитом
+* .env файл я оставил специально для трекинга гитом
