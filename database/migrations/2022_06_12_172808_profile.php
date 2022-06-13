@@ -18,7 +18,7 @@ return new class extends Migration {
 
         \Illuminate\Support\Facades\DB::statement(
             'CREATE TABLE "profiles" (
-"id" int4 NOT NULL DEFAULT nextval(\'profile_id_seq\'),
+"id" int4 NOT NULL DEFAULT nextval(\'profiles_id_seq\'),
 "user_id" int4 NOT NULL,
 "lang" varchar(3) DEFAULT \'UA\' NOT NULL,
 "timezone" text NOT NULL CHECK (now() AT TIME ZONE timezone IS NOT NULL),
