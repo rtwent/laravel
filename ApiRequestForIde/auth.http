@@ -1,0 +1,18 @@
+### Try to register a user
+POST {{host}}/user/auth
+Content-Type: application/json
+
+{
+    "email": "test@test.com",
+    "password": "content23"
+}
+
+### Try to register a user with token already provided
+POST {{host}}/user/auth
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+{
+    "email": "test@test.com",
+    "password": "content23"
+}

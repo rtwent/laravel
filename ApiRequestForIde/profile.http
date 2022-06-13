@@ -1,0 +1,10 @@
+### Try to register a user
+PATCH {{host}}/user/profile
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+Accept: application/json
+
+{
+    "timezone": "Europe/Kiev",
+    "language": "RU"
+}

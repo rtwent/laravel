@@ -1,0 +1,20 @@
+### Try to register a user
+POST {{host}}/user/register
+Content-Type: application/json
+
+{
+    "email": "testtest@com",
+    "password": "content23",
+    "password_confirmation": "content23"
+}
+
+
+### Try to register a user with not valid data
+POST {{host}}/user/register
+Content-Type: application/json
+
+{
+    "email": "testtest.com",
+    "password": "cont",
+    "password_confirmation": "content23"
+}
